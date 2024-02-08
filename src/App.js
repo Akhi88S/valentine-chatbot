@@ -18,7 +18,7 @@ const App = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:8000/utility/generate-reply?userInput=${userInput}`,
+        `https://blog-app-backend-umber.vercel.app/utility/generate-reply?userInput=${userInput}`,
         {
           method: "GET",
         }
