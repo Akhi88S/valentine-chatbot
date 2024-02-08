@@ -1,0 +1,116 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e5ddd5; /* Background color similar to WhatsApp */
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.message-text {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff; /* White background for messages */
+  white-space: pre-line;
+}
+
+.user .message-text {
+  align-self: flex-end;
+  background-color: #dcf8c6; /* Light green background for user messages */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light gray background for input container */
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #fff; /* White background for input field */
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #007bff; /* WhatsApp blue color for button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.loader p {
+  margin: 0;
+}
+
+.loader strong {
+  color: #007bff; /* WhatsApp blue color for strong text */
+}
+
+/* Error message styling */
+.error-message {
+  padding: 10px;
+  background-color: #ff3333; /* Red color for error messages */
+  color: #fff;
+}
+
+.user {
+  justify-content: flex-end;
+}
+.welcome-message {
+  height: 90%;
+  width: 90% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: serif;
+  margin-top: 20px;
+  border: 20px;
+  margin: auto;
+}
+.welcome-message p {
+  padding: 20px;
+  line-height: 40px;
+}
