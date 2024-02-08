@@ -27,7 +27,6 @@ const App = () => {
       let response = await res.json();
       response = response.data;
       clearTimeout(modelErrTimerId.current);
-      console.log("resp", response);
       retryCount.current = 0;
       if (!response) {
         throw new Error("Failed to fetch chatbot response");
@@ -95,6 +94,7 @@ const App = () => {
       setShowShortMessage(false);
     }
     return () => clearTimeout(timer);
+    // eslint-disable-next-line
   }, [loading, retryCount.current]);
 
   return (
