@@ -47,7 +47,6 @@ body {
   align-items: center;
   padding: 10px;
   background-color: #f0f0f0; /* Light gray background for input container */
-  margin-bottom: 20px;
 }
 
 input[type="text"] {
