@@ -166,12 +166,38 @@ input[type="text"] {
   -webkit-text-size-adjust: 100%; /* Prevent WebKit from zooming */
 }
 
-/* App.css */
+.input-container {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 22px); /* Adjust width to accommodate the SVG icon */
+  background-color: #f0f0f0; /* Light gray background for input container */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #fff; /* White background for input field */
+  margin-bottom: 0; /* Remove bottom margin */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow to input field */
+}
 
 .send-icon {
   cursor: pointer;
+  outline: none; /* Remove outline */
 }
 
 .send-icon:hover {
   opacity: 0.8; /* Reduce opacity on hover */
+}
+.input-container svg {
+  fill: rgba(255, 255, 255, 1);
+  background: #2572c5;
+  padding: 8px;
+  border-radius: 50%;
 }
