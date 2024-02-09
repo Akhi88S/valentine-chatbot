@@ -159,3 +159,10 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+/* Disable zooming on input focus */
+input[type="text"] {
+  font-size: 16px; /* Reset font size to prevent zooming */
+  -ms-text-size-adjust: 100%; /* Prevent IE from zooming */
+  -webkit-text-size-adjust: 100%; /* Prevent WebKit from zooming */
+}
