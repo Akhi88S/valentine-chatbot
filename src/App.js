@@ -12,6 +12,7 @@ const App = () => {
   const modelErrTimerId = useRef(null);
 
   const handleUserInput = async () => {
+    if (!userInput) return;
     const userMessage = { text: userInput, type: "user" };
     setChatHistory((prev) => [...prev, userMessage]);
     setLoading(true);
@@ -163,7 +164,6 @@ const App = () => {
           </>
         ) : (
           <>
-            {/* Inside the input-container */}
             <input
               type="text"
               value={userInput}

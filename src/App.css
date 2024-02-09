@@ -169,7 +169,7 @@ input[type="text"] {
 .input-container {
   position: fixed;
   bottom: 0;
-  width: calc(100% - 22px); /* Adjust width to accommodate the SVG icon */
+  width: calc(100% - 20px); /* Adjust width to accommodate the SVG icon */
   background-color: #f0f0f0; /* Light gray background for input container */
   padding: 10px;
   display: flex;
@@ -199,5 +199,5 @@ input[type="text"] {
   fill: rgba(255, 255, 255, 1);
   background: #2572c5;
   padding: 8px;
-  border-radius: 50%;
+  border-radius: 10px;
 }
