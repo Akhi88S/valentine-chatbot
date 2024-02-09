@@ -165,3 +165,13 @@ input[type="text"] {
   -ms-text-size-adjust: 100%; /* Prevent IE from zooming */
   -webkit-text-size-adjust: 100%; /* Prevent WebKit from zooming */
 }
+
+/* App.css */
+
+.send-icon {
+  cursor: pointer;
+}
+
+.send-icon:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}

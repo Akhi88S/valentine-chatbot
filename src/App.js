@@ -174,7 +174,24 @@ const App = () => {
               }
             />
             <button onClick={handleUserInput} disabled={loading}>
-              Send
+              {/* Inside the input-container */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#fff"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="send-icon"
+                onClick={handleUserInput}
+                disabled={loading}
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
             </button>
           </>
         )}
